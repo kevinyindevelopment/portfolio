@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
 
   }
+
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
   }
@@ -32,6 +33,20 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
+// Hiding scrollbar for Chrome/Safari/Opera
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+// Hiding scrollbar for Firefox
+  html {
+    scrollbar-width: none;
+  }
+
+// Hiding scrollbar for Edge/IE
+ body {
+    -ms-overflow-style: none;
+ }
 `;
 
 export default GlobalStyles;
