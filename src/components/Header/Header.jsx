@@ -29,16 +29,16 @@ function Header() {
        </Link>
      </NavLinkList>        
      <NavLinkList>
-       <Link to="#about">
-         <NavLink>About</NavLink>
+       <Link to="#background">
+         <NavLink>Background</NavLink>
        </Link>
      </NavLinkList>        
    </Div2>
      <Div3>
-       <SocialIcons href="https://google.com">
+       <SocialIcons target="_blank" rel="noopener noreferrer" href="https://github.com/kevinyincoding">
          <AiFillGithub size="3rem" />
        </SocialIcons>
-       <SocialIcons href="https://google.com">
+       <SocialIcons target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-yin-015aaa1a8/">
          <AiFillLinkedin size="3rem" />
        </SocialIcons>
      </Div3>

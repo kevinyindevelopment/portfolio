@@ -1,7 +1,7 @@
 
   const defaultTheme = {
     fonts: {
-      title: "Helvetica, sans-serif",
+      title: "Favorit, sans-serif",
       main: "Favorit, sans-serif"
     },
     // Colors for layout
@@ -10,8 +10,13 @@
       background1: "#E1DCCA",
       accent1: "#a0a7c0",
       button: "#f9fbfa",
-      background2: "#828bab",
-      containerBackground: "#e7efed"
+      background2: "#a38275",
+      containerBackground: "#cfbeaa",
+      linkHoverColor: "#878168",
+      complementaryLightGreen: "#b0b276",
+      complementaryBlue: "#7899a5",
+      complementaryLightRed: "#a38275",
+      complementaryDarkRed: "#6b3030",
     },
     // Breakpoints for responsive design
     breakpoints: {

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 60px);
+  grid-template-rows: repeat(1, 60px);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
   padding: 1rem;
@@ -56,7 +56,7 @@ export const NavLink = styled.div`
   transition: 0.4s ease;
   &:hover {
     transform: scale(1.05);
-    color: #878168;
+    color: ${({ theme }) => theme.colors.linkHoverColor};
     opacity: 1;
     cursor: pointer;
   }
@@ -126,7 +126,7 @@ export const SocialIcons = styled.a`
   border-radius: 50px;
   padding: 8px;
   &:hover {
-      background-color: #878168;
+      background-color: ${({ theme }) => theme.colors.linkHoverColor};
       transform: scale(1.2);
       cursor: pointer;
       
