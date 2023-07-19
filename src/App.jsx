@@ -11,6 +11,7 @@ import { Section, LineSeparator } from './themes/GlobalComponents';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import BackgroundImage from './components/Hero/BackgroundImage';
+import Technologies from './components/Technologies/Technologies';
 
 const App = () => (
   <PortfolioThemeProvider>
@@ -29,10 +30,9 @@ const App = () => (
       <Section grid>
         <Hero/>
         <BackgroundImage/>
-      </Section>
-      <LineSeparator/>
-      <Projects/>
-      <LineSeparator/>
+      </Section> <LineSeparator/>
+      <Projects/> <LineSeparator/>
+      <Technologies/> <LineSeparator/>
     </Container>
   </PortfolioThemeProvider>
 );
