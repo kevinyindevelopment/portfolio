@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Section, SectionText, SectionTitle } from '../../themes/GlobalComponents';
 import Button from '../../themes/Button';
 import { HeroSection, LeftSection } from './HeroStyles';

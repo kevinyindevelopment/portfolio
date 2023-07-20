@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiBigWave } from 'react-icons/gi';

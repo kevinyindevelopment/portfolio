@@ -1,5 +1,4 @@
-
-  const defaultTheme = {
+const defaultTheme = {
     fonts: {
       title: "Favorit, sans-serif",
       main: "Favorit, sans-serif"

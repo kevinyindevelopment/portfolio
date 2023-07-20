@@ -158,7 +158,9 @@ export const ButtonBack = styled.div`
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
   color: ${({ theme }) => theme.colors.primary1};
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #63795d 0%, #7899a5 100%)'};
+  background: ${({ alt, theme}) => alt ? 
+  'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' 
+  : (css`linear-gradient(270deg, ${theme.colors.complementaryLightGreen} 0%, ${theme.colors.complementaryBlue} 100%)`)};
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
@@ -191,7 +193,7 @@ export const ButtonFront = styled.button`
   height: 100%;
   background: ${({ alt, theme}) => alt ? 
   'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' 
-  : (css`linear-gradient(270deg, ${theme.colors.complementaryLightGreen} 0%, ${theme.colors.complementaryBlue} 100%)`)};
+  : (css`linear-gradient(270deg, ${theme.colors.complementaryLightGreen} 0%, ${theme.colors.containerBackground} 100%)`)};
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};

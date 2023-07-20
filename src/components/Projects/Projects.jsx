@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionTitle } from '../../themes/GlobalComponents';
 import { projects } from './ProjectsData';

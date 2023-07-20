@@ -1,5 +1,4 @@
 import { ThemeProvider} from 'styled-components';
-import React from 'react';
 import DefaultTheme from './DefaultTheme'
 
 const PortfolioThemeProvider = ({ children }) => (

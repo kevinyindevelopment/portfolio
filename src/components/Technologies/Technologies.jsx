@@ -1,4 +1,3 @@
-import React from 'react';
 import { DiMysql, DiReact, DiIllustrator, DiPython } from 'react-icons/di';
 import { Section, SectionText, SectionTitle } from '../../themes/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle, ListIconContainer } from './TechnologiesStyles';
@@ -45,7 +44,7 @@ const Technologies = () =>  (
           <ListTitle>UI / UX</ListTitle>
           <ListParagraph>
             <li> Worked with illustrators and designers </li>
-            <li> Familiar with Figma </li>
+            <li> Figma </li>
           </ListParagraph>
         </ListContainer>
       </ListItem>

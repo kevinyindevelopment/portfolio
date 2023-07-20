@@ -2,7 +2,8 @@ import React from 'react';
 
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import Projects from './components/Projects/Projects'
+import Projects from './components/Projects/Projects' 
+import Footer from './components/Footer/Footer'
 import PortfolioThemeProvider from './themes/ThemeProvider';
 import GlobalStyles from './themes/GlobalStyles';
 import { Container } from './themes/LayoutStyles'
@@ -12,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import BackgroundImage from './components/Hero/BackgroundImage';
 import Technologies from './components/Technologies/Technologies';
+import Background from './components/Background/Background';
 
 const App = () => (
   <PortfolioThemeProvider>
@@ -33,6 +35,8 @@ const App = () => (
       </Section> <LineSeparator/>
       <Projects/> <LineSeparator/>
       <Technologies/> <LineSeparator/>
+      <Background/> <LineSeparator/>
+      <Footer/>
     </Container>
   </PortfolioThemeProvider>
 );

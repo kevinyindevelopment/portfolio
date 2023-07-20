@@ -70,6 +70,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
+  margin-bottom: 1em;
   color: ${({ theme }) => theme.colors.primary1};
   font-style: 2rem;
   line-height: 24px;
