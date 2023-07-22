@@ -264,11 +264,13 @@ export const LinkIconImg = styled.div`
   }
 `
 export const LineSeparator = styled.hr`
-  margin-left: 5%;
+  margin: ${(props) => props.center ? "0 auto" : "0 0 0 5%" };
+  margin-bottom: ${(props) => props.center ? "5%" : "none"};
   height: 5px;
   width: 20%;
   background: #000;
   @media ${(props) => props.theme.breakpoints.md} {
     display: none;
   }
+
 `

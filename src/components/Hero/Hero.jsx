@@ -13,9 +13,11 @@ function Hero(props) { return (
         <SectionText>
             I'm a frontend developer who's always looking to incorporate new techniques and technologies into my work.
         </SectionText>
-          <Button onClick={props.handleClick}>About Me&nbsp;   
-            <BiChevronsDown/>
-          </Button>
+          <a href="#projects">
+            <Button href="#projects">About Me&nbsp;   
+              <BiChevronsDown/>
+            </Button>
+          </a>
       </LeftSection>
     </Section>
   </>

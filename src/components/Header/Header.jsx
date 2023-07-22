@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiBigWave } from 'react-icons/gi';
 import { Container, Div1, Div2, Div3, NavLink, NavLinkList, SocialIcons, Logo } from './HeaderStyles';
@@ -9,28 +8,28 @@ function Header() {
     <Container>
 
     <Div1>
-     <Link to="/">
+     <a href="#/">
        <Logo>
          <GiBigWave size="3rem" /> <Div1>Kevin Yin</Div1>
         </Logo>
-     </Link>
+     </a>
  
    </Div1>
    <Div2>
      <NavLinkList>
-       <Link to="#projects">
+       <a href="#projects">
          <NavLink>Projects</NavLink>
-       </Link>
+       </a>
      </NavLinkList>
      <NavLinkList>
-       <Link to="#tech">
+       <a href="#tech">
          <NavLink>Technologies</NavLink>
-       </Link>
+       </a>
      </NavLinkList>        
      <NavLinkList>
-       <Link to="#background">
+       <a href="#background">
          <NavLink>Background</NavLink>
-       </Link>
+       </a>
      </NavLinkList>        
    </Div2>
      <Div3>
