@@ -16,24 +16,29 @@ function Header() {
  
    </Div1>
    <Div2>
-     <NavLinkList>
-       <a href="#projects">
-         <NavLink>Projects</NavLink>
-       </a>
-     </NavLinkList>
-     <NavLinkList>
-       <a href="#tech">
-         <NavLink>Technologies</NavLink>
-       </a>
-     </NavLinkList>        
-     <NavLinkList>
-       <a href="#background">
-         <NavLink>Background</NavLink>
-       </a>
-     </NavLinkList>        
+      <NavLinkList>
+        <a href="#projects">
+          <NavLink>Projects</NavLink>
+        </a>
+      </NavLinkList>
+      <NavLinkList>
+        <a href="#tech">
+          <NavLink>Technologies</NavLink>
+        </a>
+      </NavLinkList>        
+      <NavLinkList>
+        <a href="#background">
+          <NavLink>Background</NavLink>
+        </a>
+      </NavLinkList>  
+      <NavLinkList>
+        <a href="#resume">
+          <NavLink>Resume</NavLink>
+        </a>
+      </NavLinkList>      
    </Div2>
      <Div3>
-       <SocialIcons target="_blank" rel="noopener noreferrer" href="https://github.com/kevinyincoding">
+       <SocialIcons target="_blank" rel="noopener noreferrer" href="https://github.com/kevinyindevelopment">
          <AiFillGithub size="3rem" />
        </SocialIcons>
        <SocialIcons target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-yin-015aaa1a8/">

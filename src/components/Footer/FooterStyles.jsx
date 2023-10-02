@@ -23,7 +23,7 @@ export const LinkItem = styled.a`
 	left: 0;
 
 	&:hover {
-		color: #fff;
+		color: ${({ theme }) => theme.colors.linkHoverColor};
 		left: 6px;
 	}
 
@@ -79,27 +79,6 @@ export const CompanyContainer = styled.div`
 	}
 `
 
-
-export const Slogan = styled.p`
-color: ${({ theme }) => theme.colors.primary1};
-	min-width: 280px;
-	letter-spacing: 0.02em;
-	font-size: 18px;
-	line-height: 30px;
-	padding: 1rem;
-
-	@media ${props => props.theme.breakpoints.md}{
-		font-size: 16px;
-		line-height: 28px;
-	}
-
-	@media ${props => props.theme.breakpoints.sm}{
-		line-height: 22px;
-		font-size: 14px;
-		min-width: 100px;
-	}
-`
-
 export const SocialContainer = styled.div`
 	display: flex;
   align-items: center;
@@ -110,7 +89,6 @@ export const SocialContainer = styled.div`
 		flex-wrap: wrap;
 	}
 `
-
 
 export const LinkList = styled.ul`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
