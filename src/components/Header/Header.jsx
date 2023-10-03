@@ -1,9 +1,34 @@
+import { useState } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiBigWave } from 'react-icons/gi';
-import { Container, Div1, Div2, Div3, NavLink, NavLinkList, SocialIcons, Logo } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, NavLinkList, SocialIcons, Logo, ResumeModal} from './HeaderStyles';
+import Modal from 'react-modal';
 
+Modal.setAppElement('#root');
 
 function Header() {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const modalStyle = {
+    overflow: 'hidden',
+    width: "100%",
+    height: "100%"
+  }
+
+  const modalOverlay = {
+    height: "100%",
+    backgroundColor: "rgba(255, 255, 255, 1)"
+  }
+
   return (
     <Container>
 
@@ -13,7 +38,6 @@ function Header() {
          <GiBigWave size="3rem" /> <Div1>Kevin Yin</Div1>
         </Logo>
      </a>
- 
    </Div1>
    <Div2>
       <NavLinkList>
@@ -32,9 +56,23 @@ function Header() {
         </a>
       </NavLinkList>  
       <NavLinkList>
-        <a href="#resume">
+        <a href='#' onClick={openModal}>
           <NavLink>Resume</NavLink>
         </a>
+        <ResumeModal 
+          isOpen={modalIsOpen} 
+          onRequestClose={closeModal} 
+
+        >
+          <div style={modalStyle}>
+            <iframe
+                title="PDF Viewer"
+                src="./ResumeKevinYin.pdf"
+                width="100%"
+                height="100%"
+            />
+          </div>
+        </ResumeModal>
       </NavLinkList>      
    </Div2>
      <Div3>

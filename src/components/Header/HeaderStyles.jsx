@@ -1,5 +1,6 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
+import Modal from 'react-modal';
 
 export const Container = styled.div`
   display: grid;
@@ -138,3 +139,11 @@ export const Logo = styled.div`
   display: flex;
   alignItems: center;
 `
+
+export const ResumeModal = styled(Modal)`
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+
+`;
