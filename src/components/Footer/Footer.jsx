@@ -22,10 +22,10 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
         <SocialContainer>
-          <SocialIcons href="https://github.com/kevinyindevelopment">
+          <SocialIcons target="_blank" rel="noopener noreferrer" href="https://github.com/kevinyindevelopment">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/kevin-yin-015aaa1a8/">
+          <SocialIcons target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-yin-015aaa1a8/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>

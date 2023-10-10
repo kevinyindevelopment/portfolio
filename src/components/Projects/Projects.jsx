@@ -16,7 +16,7 @@ const Projects = () => (
                 </TitleContent>
                 <CardInfo className="card-info">{p.description}</CardInfo>
                 <div>
-                <TitleContent>Stack:</TitleContent>
+                <TitleContent>Using:</TitleContent>
                 <TagList>
                     {p.tags.map((t, i) => {
                     return <Tag key={i}>{t}</Tag>;
@@ -24,8 +24,12 @@ const Projects = () => (
                 </TagList>
                 </div>
                 <UtilityList>
-                <ExternalLinks href={p.visit}>Code</ExternalLinks>
-                <ExternalLinks href={p.source}>Source</ExternalLinks>
+                {p.visit ? (
+                <ExternalLinks target="_blank" rel="noopener noreferrer" href={p.visit}>Code</ExternalLinks>
+                ) : null}
+                {p.source ? (
+                <ExternalLinks target="_blank" rel="noopener noreferrer" href={p.source}>Website</ExternalLinks>
+                ) : null}
                 </UtilityList>
             </BlogCard>
             );

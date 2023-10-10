@@ -145,5 +145,8 @@ export const ResumeModal = styled(Modal)`
   width: 60%;
   margin: auto;
   overflow: hidden;
-
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: 70%;
+  }
 `;

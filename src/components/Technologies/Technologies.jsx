@@ -19,7 +19,7 @@ const Technologies = () =>  (
             <li> React </li>
             <li> TypeScript </li>
             <li> Bootstrap </li>
-            <li> Styled Components </li>
+            <li> styled-components </li>
           </ListParagraph>
         </ListContainer>
       </ListItem>
